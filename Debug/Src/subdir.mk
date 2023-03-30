@@ -10,6 +10,9 @@ C_SRCS += \
 ../Src/Motores.c \
 ../Src/Ultrasonido.c \
 ../Src/main.c \
+../Src/mpu9250_i2c.c \
+../Src/stm32f411x_i2c.c \
+../Src/stm32f411xx_gpio.c \
 ../Src/syscalls.c \
 ../Src/sysmem.c 
 
@@ -19,6 +22,9 @@ OBJS += \
 ./Src/Motores.o \
 ./Src/Ultrasonido.o \
 ./Src/main.o \
+./Src/mpu9250_i2c.o \
+./Src/stm32f411x_i2c.o \
+./Src/stm32f411xx_gpio.o \
 ./Src/syscalls.o \
 ./Src/sysmem.o 
 
@@ -28,6 +34,9 @@ C_DEPS += \
 ./Src/Motores.d \
 ./Src/Ultrasonido.d \
 ./Src/main.d \
+./Src/mpu9250_i2c.d \
+./Src/stm32f411x_i2c.d \
+./Src/stm32f411xx_gpio.d \
 ./Src/syscalls.d \
 ./Src/sysmem.d 
 
@@ -43,6 +52,12 @@ Src/Ultrasonido.o: ../Src/Ultrasonido.c Src/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/Ultrasonido.d" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
 Src/main.o: ../Src/main.c Src/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
+Src/mpu9250_i2c.o: ../Src/mpu9250_i2c.c Src/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/mpu9250_i2c.d" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
+Src/stm32f411x_i2c.o: ../Src/stm32f411x_i2c.c Src/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f411x_i2c.d" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
+Src/stm32f411xx_gpio.o: ../Src/stm32f411xx_gpio.c Src/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f411xx_gpio.d" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
 Src/syscalls.o: ../Src/syscalls.c Src/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
 Src/sysmem.o: ../Src/sysmem.c Src/subdir.mk
