@@ -1,0 +1,11 @@
+stm32f411xx_gpio.c:12:6:GPIO_PeripheralClockControl	16	static
+stm32f411xx_gpio.c:80:6:GPIO_Init	32	static
+stm32f411xx_gpio.c:164:6:GPIO_DeInit	16	static
+stm32f411xx_gpio.c:198:9:GPIO_ReadFromInputPin	24	static
+stm32f411xx_gpio.c:208:10:GPIO_ReadFromInputPort	24	static
+stm32f411xx_gpio.c:219:6:GPIO_WriteToOuputPin	16	static
+stm32f411xx_gpio.c:235:6:GPIO_WriteToOutputPort	16	static
+stm32f411xx_gpio.c:243:6:GPIO_TogglePin	16	static
+stm32f411xx_gpio.c:254:6:GPIO_IRQInterruptConfig	16	static
+stm32f411xx_gpio.c:296:6:GPIO_IRQPriorityConfig	24	static
+stm32f411xx_gpio.c:308:6:GPIO_IRQHandling	16	static

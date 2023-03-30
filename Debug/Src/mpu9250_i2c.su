@@ -1,0 +1,14 @@
+mpu9250_i2c.c:22:13:I2C_ModuleConfiguration	16	static
+mpu9250_i2c.c:32:6:I2C_MpuInit	16	static
+mpu9250_i2c.c:44:13:I2C_MpuConfiguration	24	static
+mpu9250_i2c.c:57:13:Delay	24	static
+mpu9250_i2c.c:66:16:WhoAmI	24	static
+mpu9250_i2c.c:82:6:I2C_MpuConfig	16	static
+mpu9250_i2c.c:124:6:I2C_Mpu9250WriteData	32	static
+mpu9250_i2c.c:130:6:I2C_Mpu9250ReadData	40	static
+mpu9250_i2c.c:138:6:I2C_MpuReadData	24	static
+mpu9250_i2c.c:154:6:CalculateRealAcceleration	24	static
+mpu9250_i2c.c:176:6:I2C_MpuConfigIT	24	static
+mpu9250_i2c.c:239:6:I2C_Mpu9250WriteDataIT	32	static
+mpu9250_i2c.c:245:6:I2C_Mpu9250ReadDataIT	40	static
+mpu9250_i2c.c:261:6:I2C_MpuReadDataWithInterrupts	24	static
